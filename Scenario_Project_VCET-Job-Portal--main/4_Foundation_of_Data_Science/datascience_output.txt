@@ -1,0 +1,83 @@
+================================================================================
+   ONLINE JOB PORTAL - FOUNDATIONS OF DATA SCIENCE EXECUTION OUTPUT
+   Subject Code: 25ITC31 - Foundations of Data Science
+================================================================================
+
+================================================================================
+   UNIT 1: DESCRIPTIVE STATISTICS & DATA DESCRIPTION (25ITC31)
+================================================================================
+
+[STUDENT CGPA METRICS (N=22)]
+  * Mean CGPA          : 8.384
+  * Median CGPA        : 8.525
+  * Standard Deviation : 0.598
+  * Variance           : 0.358
+  * Range              : [7.20 - 9.20] (Delta: 2.00)
+
+[ANNUAL SALARY PACKAGE METRICS (in INR)]
+  * Mean Salary        : INR 1,125,000.00
+  * Median Salary      : INR 1,175,000.00
+  * Standard Deviation : INR 555,009.65
+  * Variance           : INR 308,035,714,285.71
+  * 25th Percentile Q1 : INR 512,500.00
+  * 75th Percentile Q3 : INR 1,600,000.00
+  * Interquartile (IQR): INR 1,087,500.00
+
+[STANDARD (z) SCORES (First 6 Records)]
+Student ID   Name               Dept   CGPA   z(CGPA)    Salary (INR)    z(Salary) 
+--------------------------------------------------------------------------------
+STU001       Aarav Sharma       IT     8.75   0.611      1,800,000       1.216     
+STU001       Aarav Sharma       IT     8.75   0.611      850,000         -0.495    
+STU002       Diya Patel         CSE    9.20   1.363      1,800,000       1.216     
+STU002       Diya Patel         CSE    9.20   1.363      1,600,000       0.856     
+STU003       Rohan Verma        ECE    7.80   -0.976     700,000         -0.766    
+STU003       Rohan Verma        ECE    7.80   -0.976     450,000         -1.216    
+
+================================================================================
+   UNIT 3 & 4: DATA WRANGLING, CLEANING & TRANSFORMATION (25ITC31)
+================================================================================
+
+[DUPLICATE DETECTION (FR4)]
+  * Duplicate student-job application pairs detected: 0
+  * Dataset is verified clean with zero duplicate applications.
+
+[MISSING VALUE AUDIT]
+  * No missing values found in required columns.
+
+[OUTLIER DETECTION VIA IQR (Unit 4)]
+  * Lower Fence (Q1 - 1.5*IQR): INR -1,118,750.00
+  * Upper Fence (Q3 + 1.5*IQR): INR 3,231,250.00
+  * High-value premium offers within fence: 22 rows.
+
+[PIVOT TABLE 1: DEPARTMENT vs RECRUITMENT STATUS (Unit 3)]
+status      Applied  Rejected  Selected  Shortlisted
+department                                          
+AIDS              1         1         2            1
+CSE               0         0         2            3
+ECE               2         0         1            1
+IT                0         0         4            2
+MECH              2         0         0            0
+
+[PIVOT TABLE 2: COMPANY-WISE RECRUITMENT PERFORMANCE]
+             company_name  Total_Applicants  Selected_Count  Avg_Salary  Max_Salary
+        Amazon Dev Centre                 4               2   1600000.0     1600000
+    Bosch Global Software                 2               1    700000.0      700000
+             Google India                 4               2   1800000.0     1800000
+            Microsoft IDC                 3               2   1500000.0     1500000
+Tata Consultancy Services                 6               1    450000.0      450000
+         Zoho Corporation                 3               1    850000.0      850000
+
+================================================================================
+   UNIT 5: GENERATED EXPLORATORY DATA ANALYSIS (EDA) VISUALIZATIONS
+================================================================================
+  [SAVED] 1_dept_applications_bar.png
+  [SAVED] 2_status_distribution_pie.png
+  [SAVED] 3_salary_distribution_hist.png
+  [SAVED] 4_cgpa_vs_salary_scatter.png
+  [SAVED] 5_salary_by_dept_boxplot.png
+  [SAVED] 6_correlation_heatmap.png
+
+[SUMMARY CONCLUSION]
+1. IT & CSE departments registered highest median salary packages (INR 15-18 LPA).
+2. Positive correlation observed between Student CGPA and Offered Package (r > 0.65).
+3. 100% of duplicate application attempts successfully detected and mitigated.

@@ -1,0 +1,137 @@
+================================================================================
+       ONLINE JOB PORTAL - DATABASE MANAGEMENT SYSTEM EXECUTION OUTPUT
+       Subject Code: 25ITT31 - Database Management Systems
+================================================================================
+
+================================================================================
+              INITIALIZING JOB PORTAL DATABASE (SQLite RDBMS)
+================================================================================
+[INFO] Removed existing database: C:\JOB PORTAL\2_Database_Management_System\job_portal.db
+[SUCCESS] Executed C:\JOB PORTAL\2_Database_Management_System\schema.sql: Tables, Views, Triggers created successfully.
+[SUCCESS] Executed C:\JOB PORTAL\2_Database_Management_System\sample_data.sql: Sample records populated.
+  -> Table 'departments': 5 records loaded.
+  -> Table 'students': 12 records loaded.
+  -> Table 'companies': 6 records loaded.
+  -> Table 'job_vacancies': 6 records loaded.
+  -> Table 'applications': 20 records loaded.
+
+
+================================================================================================================================
+                                                 STUDENTS TABLE (FIRST 6 ROWS)                                                 
+================================================================================================================================
++------------+--------------+---------+---------------+------+---------------------------------------+-------------------------+
+| student_id | name         | dept_id | qualification | cgpa | skills                                | email                   |
++------------+--------------+---------+---------------+------+---------------------------------------+-------------------------+
+| STU001     | Aarav Sharma | IT      | B.Tech IT     | 8.75 | Java, Python, SQL, Spring Boot        | aarav.sharma@campus.edu |
+| STU002     | Diya Patel   | CSE     | B.E CSE       | 9.2  | Python, Machine Learning, SQL, C++    | diya.patel@campus.edu   |
+| STU003     | Rohan Verma  | ECE     | B.E ECE       | 7.8  | Embedded C, IoT, Python, MATLAB       | rohan.verma@campus.edu  |
+| STU004     | Ananya Iyer  | AIDS    | B.Tech AIDS   | 8.9  | Python, Data Science, Pandas, PowerBI | ananya.iyer@campus.edu  |
+| STU005     | Karthik Raja | MECH    | B.E MECH      | 7.45 | AutoCAD, SolidWorks, Python, ANSYS    | karthik.raja@campus.edu |
+| STU006     | Sneha Menon  | IT      | B.Tech IT     | 8.1  | Java, React, SQL, HTML/CSS            | sneha.menon@campus.edu  |
++------------+--------------+---------+---------------+------+---------------------------------------+-------------------------+
+Total Rows: 6
+
+
+======================================================================================================================================================
+                                                                 JOB VACANCIES POSTED                                                                
+======================================================================================================================================================
++------------+------------+-------------------------------+----------+-------------------------------------------+------------+-----------+----------+
+| vacancy_id | company_id | job_title                     | min_cgpa | required_skills                           | location   | salary    | openings |
++------------+------------+-------------------------------+----------+-------------------------------------------+------------+-----------+----------+
+| VAC201     | CMP101     | Software Development Engineer | 8.5      | Java, Data Structures, Algorithms         | Bengaluru  | 1800000.0 | 5        |
+| VAC202     | CMP102     | Cloud Solutions Associate     | 8.0      | Cloud, Python, Linux, Networking          | Hyderabad  | 1500000.0 | 8        |
+| VAC203     | CMP103     | Data Engineer                 | 8.0      | Python, SQL, Spark, Big Data              | Chennai    | 1600000.0 | 4        |
+| VAC204     | CMP104     | Systems Engineer              | 7.0      | Java, C++, DBMS, Communication            | Chennai    | 450000.0  | 25       |
+| VAC205     | CMP105     | Product Developer             | 7.5      | Java, C, Web Development, Problem Solving | Tenkasi    | 850000.0  | 10       |
+| VAC206     | CMP106     | Embedded Software Engineer    | 7.5      | Embedded C, Microcontrollers, RTOS        | Coimbatore | 700000.0  | 6        |
++------------+------------+-------------------------------+----------+-------------------------------------------+------------+-----------+----------+
+Total Rows: 6
+
+
+=======================================================================
+                          ACTIVE APPLICATIONS                         
+=======================================================================
++----------------+------------+------------+------------+-------------+
+| application_id | student_id | vacancy_id | apply_date | status      |
++----------------+------------+------------+------------+-------------+
+| 1              | STU001     | VAC201     | 2026-09-01 | Selected    |
+| 2              | STU001     | VAC205     | 2026-09-03 | Shortlisted |
+| 3              | STU002     | VAC201     | 2026-09-01 | Selected    |
+| 4              | STU002     | VAC203     | 2026-09-02 | Shortlisted |
+| 5              | STU003     | VAC206     | 2026-09-04 | Selected    |
+| 6              | STU003     | VAC204     | 2026-09-05 | Applied     |
+| 7              | STU004     | VAC203     | 2026-09-02 | Selected    |
+| 8              | STU004     | VAC202     | 2026-09-03 | Shortlisted |
+| 9              | STU005     | VAC204     | 2026-09-06 | Applied     |
+| 10             | STU006     | VAC205     | 2026-09-04 | Selected    |
++----------------+------------+------------+------------+-------------+
+Total Rows: 10
+
+[TEST FR4 PASSED] Database enforced UNIQUE(student_id, vacancy_id): UNIQUE constraint failed: applications.student_id, applications.vacancy_id
+
+
+====================================================================================================================================================================================================
+                                                                               REPORT 1: RECENT STUDENT APPLICATIONS                                                                               
+====================================================================================================================================================================================================
++----------------+------------+--------------+-------------------------------------------+------+---------------------------+-------------------------------+-----------+------------+-------------+
+| application_id | student_id | student_name | dept_name                                 | cgpa | company_name              | job_title                     | salary    | apply_date | status      |
++----------------+------------+--------------+-------------------------------------------+------+---------------------------+-------------------------------+-----------+------------+-------------+
+| 1              | STU001     | Aarav Sharma | Information Technology                    | 8.75 | Google India              | Software Development Engineer | 1800000.0 | 2026-09-01 | Selected    |
+| 2              | STU001     | Aarav Sharma | Information Technology                    | 8.75 | Zoho Corporation          | Product Developer             | 850000.0  | 2026-09-03 | Shortlisted |
+| 3              | STU002     | Diya Patel   | Computer Science and Engineering          | 9.2  | Google India              | Software Development Engineer | 1800000.0 | 2026-09-01 | Selected    |
+| 4              | STU002     | Diya Patel   | Computer Science and Engineering          | 9.2  | Amazon Dev Centre         | Data Engineer                 | 1600000.0 | 2026-09-02 | Shortlisted |
+| 5              | STU003     | Rohan Verma  | Electronics and Communication Engineering | 7.8  | Bosch Global Software     | Embedded Software Engineer    | 700000.0  | 2026-09-04 | Selected    |
+| 6              | STU003     | Rohan Verma  | Electronics and Communication Engineering | 7.8  | Tata Consultancy Services | Systems Engineer              | 450000.0  | 2026-09-05 | Applied     |
+| 7              | STU004     | Ananya Iyer  | Artificial Intelligence and Data Science  | 8.9  | Amazon Dev Centre         | Data Engineer                 | 1600000.0 | 2026-09-02 | Selected    |
+| 8              | STU004     | Ananya Iyer  | Artificial Intelligence and Data Science  | 8.9  | Microsoft IDC             | Cloud Solutions Associate     | 1500000.0 | 2026-09-03 | Shortlisted |
+| 9              | STU005     | Karthik Raja | Mechanical Engineering                    | 7.45 | Tata Consultancy Services | Systems Engineer              | 450000.0  | 2026-09-06 | Applied     |
+| 10             | STU006     | Sneha Menon  | Information Technology                    | 8.1  | Zoho Corporation          | Product Developer             | 850000.0  | 2026-09-04 | Selected    |
++----------------+------------+--------------+-------------------------------------------+------+---------------------------+-------------------------------+-----------+------------+-------------+
+Total Rows: 10
+
+
+=============================================================================================================================
+                                          REPORT 2: COMPANY-WISE RECRUITMENT SUMMARY                                        
+=============================================================================================================================
++------------+---------------------------+------------------------+------------------+----------------+---------------------+
+| company_id | company_name              | total_vacancies_posted | total_applicants | selected_count | avg_package_offered |
++------------+---------------------------+------------------------+------------------+----------------+---------------------+
+| CMP103     | Amazon Dev Centre         | 1                      | 4                | 2              | 1600000.0           |
+| CMP106     | Bosch Global Software     | 1                      | 2                | 1              | 700000.0            |
+| CMP101     | Google India              | 1                      | 4                | 2              | 1800000.0           |
+| CMP102     | Microsoft IDC             | 1                      | 2                | 1              | 1500000.0           |
+| CMP104     | Tata Consultancy Services | 1                      | 5                | 1              | 450000.0            |
+| CMP105     | Zoho Corporation          | 1                      | 3                | 1              | 850000.0            |
++------------+---------------------------+------------------------+------------------+----------------+---------------------+
+Total Rows: 6
+
+
+=================================================================================================================
+                                   REPORT 3: DEPARTMENT-WISE PLACEMENT SUMMARY                                  
+=================================================================================================================
++---------+-------------------------------------------+----------------+-----------------+----------------------+
+| dept_id | dept_name                                 | total_students | placed_students | placement_percentage |
++---------+-------------------------------------------+----------------+-----------------+----------------------+
+| AIDS    | Artificial Intelligence and Data Science  | 3              | 2               | 66.67                |
+| CSE     | Computer Science and Engineering          | 3              | 2               | 66.67                |
+| ECE     | Electronics and Communication Engineering | 2              | 1               | 50.0                 |
+| IT      | Information Technology                    | 3              | 3               | 100.0                |
+| MECH    | Mechanical Engineering                    | 1              | 0               | 0.0                  |
++---------+-------------------------------------------+----------------+-----------------+----------------------+
+Total Rows: 5
+
+
+===================================================================
+     REPORT 4: RECENT AUDIT LOG ENTRIES (TRIGGER VERIFICATION)    
+===================================================================
++----------------+------------+-------------+---------------------+
+| application_id | old_status | new_status  | change_timestamp    |
++----------------+------------+-------------+---------------------+
+| 20             | None       | Applied     | 2026-11-19 15:23:58 |
+| 19             | None       | Shortlisted | 2026-11-19 15:23:58 |
+| 18             | None       | Selected    | 2026-11-19 15:23:58 |
+| 17             | None       | Selected    | 2026-11-19 15:23:58 |
+| 16             | None       | Rejected    | 2026-11-19 15:23:58 |
++----------------+------------+-------------+---------------------+
+Total Rows: 5
+

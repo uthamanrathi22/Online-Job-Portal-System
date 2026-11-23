@@ -1,0 +1,75 @@
+================================================================================
+       ONLINE JOB PORTAL - JAVA PROGRAMMING SYSTEM TEST EXECUTION OUTPUT        
+       Subject Code: 25ITT32 - Java Programming                                 
+================================================================================
+
+[TEST 1: LISTING REGISTERED STUDENTS (FR1)]
+Student[ID=STU001, Name=Aarav Sharma      , Dept=IT   , CGPA=8.75, Skills=Java, Python, SQL, Spring Boot]
+Student[ID=STU002, Name=Diya Patel        , Dept=CSE  , CGPA=9.20, Skills=Python, ML, SQL, C++]
+Student[ID=STU003, Name=Rohan Verma       , Dept=ECE  , CGPA=7.80, Skills=Embedded C, IoT, Python]
+Student[ID=STU004, Name=Ananya Iyer       , Dept=AIDS , CGPA=8.90, Skills=Python, Data Science, Pandas]
+Student[ID=STU005, Name=Karthik Raja      , Dept=MECH , CGPA=7.45, Skills=AutoCAD, SolidWorks, Python]
+Student[ID=STU006, Name=Sneha Menon       , Dept=IT   , CGPA=8.10, Skills=Java, React, SQL]
+Student[ID=STU007, Name=Vikramaditya Rao  , Dept=CSE  , CGPA=8.65, Skills=Java, Spring Boot, Docker]
+Student[ID=STU008, Name=Pooja Hegde       , Dept=ECE  , CGPA=8.05, Skills=VLSI, Verilog, C]
+Student[ID=STU009, Name=Naveen Kumar      , Dept=AIDS , CGPA=9.05, Skills=Deep Learning, NLP, Python]
+Student[ID=STU010, Name=Meera Krishnan    , Dept=IT   , CGPA=7.60, Skills=Python, Django, PostgreSQL]
+
+[TEST 2: LISTING PUBLISHED JOB VACANCIES (FR2)]
+Vacancy[ID=VAC201, Company=Google India   , Title=Software Development Engineer, MinCGPA=8.50, Salary=INR 1,800,000, Loc=Bengaluru]
+Vacancy[ID=VAC202, Company=Microsoft IDC  , Title=Cloud Solutions Associate, MinCGPA=8.00, Salary=INR 1,500,000, Loc=Hyderabad]
+Vacancy[ID=VAC203, Company=Amazon Dev Centre, Title=Data Engineer            , MinCGPA=8.00, Salary=INR 1,600,000, Loc=Chennai]
+Vacancy[ID=VAC204, Company=Tata Consultancy Services, Title=Systems Engineer         , MinCGPA=7.00, Salary=INR 450,000, Loc=Chennai]
+Vacancy[ID=VAC205, Company=Zoho Corporation, Title=Product Developer        , MinCGPA=7.50, Salary=INR 850,000, Loc=Tenkasi]
+Vacancy[ID=VAC206, Company=Bosch Global Software, Title=Embedded Engineer        , MinCGPA=7.50, Salary=INR 700,000, Loc=Coimbatore]
+
+[TEST 3: SORTING VACANCIES BY SALARY (Unit 5: Stream API)]
+  INR  1,800,000 | Google India         | Software Development Engineer
+  INR  1,600,000 | Amazon Dev Centre    | Data Engineer
+  INR  1,500,000 | Microsoft IDC        | Cloud Solutions Associate
+  INR    850,000 | Zoho Corporation     | Product Developer
+  INR    700,000 | Bosch Global Software | Embedded Engineer
+  INR    450,000 | Tata Consultancy Services | Systems Engineer
+
+[TEST 4: DUPLICATE APPLICATION PREVENTION TEST (FR4 & Unit 3 Exceptions)]
+Attempting duplicate submission: Student 'STU001' applying again for 'VAC201'...
+PASSED: Caught DuplicateApplicationException successfully:
+  DUPLICATE APPLICATION BLOCKED: Student 'STU001' has already applied for Vacancy 'VAC201'!
+
+[TEST 5: ELIGIBILITY CHECK TEST (FR3 & Unit 3 Exceptions)]
+Attempting ineligible application: Student 'STU005' (CGPA 7.45) applying for 'VAC201' (Req 8.50)...
+PASSED: Caught IneligibleStudentException successfully:
+  ELIGIBILITY CRITERIA NOT MET: Student 'STU005' has CGPA 7.45, which is below the minimum required CGPA of 8.50!
+
+[TEST 6: MULTITHREADED BATCH APPLICATION SCREENING (Unit 3)]
+PASSED: Multithreaded processor completed execution without race conditions.
+
+[TEST 7: COMPREHENSIVE REPORT GENERATION (FR6 & Unit 5 Streams)]
+================================================================================
+         ONLINE JOB PORTAL - PLACEMENT CELL SUMMARY REPORT (FR6)
+================================================================================
+Total Registered Students : 10
+Total Partner Companies   : 6
+Total Job Vacancies Posted: 6
+Total Applications Logged : 12
+Average Annual Package    : INR 1,150,000.00
+
+--- DEPARTMENT-WISE SELECTION BREAKDOWN ---
+  * Department CSE   : 2 Students Selected
+  * Department ECE   : 1 Students Selected
+  * Department AIDS  : 2 Students Selected
+  * Department IT    : 3 Students Selected
+
+--- COMPANY-WISE RECRUITMENT COUNTS ---
+  * Tata Consultancy Services: 1 Recruits
+  * Microsoft IDC            : 1 Recruits
+  * Zoho Corporation         : 1 Recruits
+  * Bosch Global Software    : 1 Recruits
+  * Google India             : 2 Recruits
+  * Amazon Dev Centre        : 2 Recruits
+
+--- APPLICATION STATUS DISTRIBUTION ---
+  * Selected    : 8
+  * Shortlisted : 3
+  * Rejected    : 1
+================================================================================

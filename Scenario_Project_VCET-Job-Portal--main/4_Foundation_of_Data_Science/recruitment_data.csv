@@ -1,0 +1,23 @@
+application_id,student_id,student_name,department,qualification,cgpa,skills,company_id,company_name,industry,job_title,min_cgpa,salary,location,apply_date,status
+1,STU001,Aarav Sharma,IT,B.Tech IT,8.75,"Java, Python, SQL, Spring Boot",CMP101,Google India,Product / Internet,Software Development Engineer,8.5,1800000,Bengaluru,2026-09-01,Selected
+2,STU001,Aarav Sharma,IT,B.Tech IT,8.75,"Java, Python, SQL, Spring Boot",CMP105,Zoho Corporation,SaaS Software,Product Developer,7.5,850000,Tenkasi,2026-09-03,Shortlisted
+3,STU002,Diya Patel,CSE,B.E CSE,9.20,"Python, Machine Learning, SQL, C++",CMP101,Google India,Product / Internet,Software Development Engineer,8.5,1800000,Bengaluru,2026-09-01,Selected
+4,STU002,Diya Patel,CSE,B.E CSE,9.20,"Python, Machine Learning, SQL, C++",CMP103,Amazon Dev Centre,E-Commerce / Cloud,Data Engineer,8.0,1600000,Chennai,2026-09-02,Shortlisted
+5,STU003,Rohan Verma,ECE,B.E ECE,7.80,"Embedded C, IoT, Python, MATLAB",CMP106,Bosch Global Software,Automotive / Embedded,Embedded Software Engineer,7.5,700000,Coimbatore,2026-09-04,Selected
+6,STU003,Rohan Verma,ECE,B.E ECE,7.80,"Embedded C, IoT, Python, MATLAB",CMP104,Tata Consultancy Services,IT Services,Systems Engineer,7.0,450000,Chennai,2026-09-05,Applied
+7,STU004,Ananya Iyer,AIDS,B.Tech AIDS,8.90,"Python, Data Science, Pandas, PowerBI",CMP103,Amazon Dev Centre,E-Commerce / Cloud,Data Engineer,8.0,1600000,Chennai,2026-09-02,Selected
+8,STU004,Ananya Iyer,AIDS,B.Tech AIDS,8.90,"Python, Data Science, Pandas, PowerBI",CMP102,Microsoft IDC,Product / Cloud,Cloud Solutions Associate,8.0,1500000,Hyderabad,2026-09-03,Shortlisted
+9,STU005,Karthik Raja,MECH,B.E MECH,7.45,"AutoCAD, SolidWorks, Python, ANSYS",CMP104,Tata Consultancy Services,IT Services,Systems Engineer,7.0,450000,Chennai,2026-09-06,Applied
+10,STU006,Sneha Menon,IT,B.Tech IT,8.10,"Java, React, SQL, HTML/CSS",CMP105,Zoho Corporation,SaaS Software,Product Developer,7.5,850000,Tenkasi,2026-09-04,Selected
+11,STU006,Sneha Menon,IT,B.Tech IT,8.10,"Java, React, SQL, HTML/CSS",CMP104,Tata Consultancy Services,IT Services,Systems Engineer,7.0,450000,Chennai,2026-09-05,Shortlisted
+12,STU007,Vikramaditya Rao,CSE,B.E CSE,8.65,"Java, Spring Boot, Microservices, Docker",CMP101,Google India,Product / Internet,Software Development Engineer,8.5,1800000,Bengaluru,2026-09-01,Shortlisted
+13,STU007,Vikramaditya Rao,CSE,B.E CSE,8.65,"Java, Spring Boot, Microservices, Docker",CMP102,Microsoft IDC,Product / Cloud,Cloud Solutions Associate,8.0,1500000,Hyderabad,2026-09-02,Selected
+14,STU008,Pooja Hegde,ECE,B.E ECE,8.05,"VLSI, Verilog, C, Python",CMP106,Bosch Global Software,Automotive / Embedded,Embedded Software Engineer,7.5,700000,Coimbatore,2026-09-04,Shortlisted
+15,STU008,Pooja Hegde,ECE,B.E ECE,8.05,"VLSI, Verilog, C, Python",CMP104,Tata Consultancy Services,IT Services,Systems Engineer,7.0,450000,Chennai,2026-09-05,Applied
+16,STU009,Naveen Kumar,AIDS,B.Tech AIDS,9.05,"Deep Learning, NLP, Python, PyTorch",CMP101,Google India,Product / Internet,Software Development Engineer,8.5,1800000,Bengaluru,2026-09-01,Rejected
+17,STU009,Naveen Kumar,AIDS,B.Tech AIDS,9.05,"Deep Learning, NLP, Python, PyTorch",CMP103,Amazon Dev Centre,E-Commerce / Cloud,Data Engineer,8.0,1600000,Chennai,2026-09-02,Selected
+18,STU010,Meera Krishnan,IT,B.Tech IT,7.60,"Python, Django, PostgreSQL, Git",CMP104,Tata Consultancy Services,IT Services,Systems Engineer,7.0,450000,Chennai,2026-09-06,Selected
+19,STU011,Arjun Das,CSE,B.E CSE,7.95,"Java, Kotlin, Android, SQLite",CMP105,Zoho Corporation,SaaS Software,Product Developer,7.5,850000,Tenkasi,2026-09-04,Shortlisted
+20,STU012,Harini Sundar,AIDS,B.Tech AIDS,8.40,"Tableau, SQL, Python, Statistics",CMP103,Amazon Dev Centre,E-Commerce / Cloud,Data Engineer,8.0,1600000,Chennai,2026-09-03,Applied
+21,STU013,Vikas Seth,MECH,B.E MECH,7.20,"AutoCAD, CATIA, Python",CMP104,Tata Consultancy Services,IT Services,Systems Engineer,7.0,450000,Chennai,2026-09-06,Applied
+22,STU014,Swetha Ramesh,IT,B.Tech IT,8.85,"Java, Cloud, Microservices, Python",CMP102,Microsoft IDC,Product / Cloud,Cloud Solutions Associate,8.0,1500000,Hyderabad,2026-09-03,Selected
